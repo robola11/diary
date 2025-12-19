@@ -1,0 +1,91 @@
+form {
+    flex: 2;
+    flex-basis: 300px;
+}
+
+.info {
+    flex: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+   
+}
+
+.detail {
+    padding: 1.5rem;
+    background: var(--surface-clr);
+    border-radius: 1rem 1rem 0 0;
+    border: .1rem solid rgba(123, 123, 123, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100% ;
+}
+
+.detail h6 {
+    font-size: 1.5rem;
+    text-align: start ;
+    color: var(--text-primary-clr);
+}
+
+h5 {
+    color: var(--primary-clr);
+}
+
+.rounded-b {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.rounded-b h5 {
+    font-size: 1.5rem;
+}
+
+
+
+.input-container {flex: 1;}
+
+label {
+    font-size: .9rem;
+    color: var(--text-primary-clr);
+}
+
+.input-field{
+     width: 100%;
+     color: var(--text-primary-clr);
+     background: var(--surface-clr);
+     border: 0.1rem solid rgba(123, 123, 123, 0.2);
+     padding: 1rem;
+     margin-top: .5rem;
+}
+
+.input-field:focus {
+    outline: .09rem solid var(--text-primary-clr);
+}
+
+.select, .input-field::placeholder {
+    color: gray;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.bg-header {
+    padding: 1.5rem;
+    background-image: url("../../assets/header-bg.jfif");
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: .5rem;
+}
+
+.toast-msg {
+  background: var(--text-primary-clr);
+  color: var(--surface-clr);
+  font-size: 20px;
+  width: 34vw;
+  padding: 30px 20px;
+}

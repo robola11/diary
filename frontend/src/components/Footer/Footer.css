@@ -1,0 +1,66 @@
+.copyright {
+  border-top: .015rem solid var(--text-secondary-clr);
+  background: var(--background-clr);
+  padding-block: 2rem;
+}
+
+.copyright p {
+  color: var(--text-primary-clr);
+}
+
+.p-block-2 {
+  padding-block: 2rem;
+}
+
+.footer-wrapper {
+  flex: 1;
+  flex-basis: 150px;
+}
+
+.footer-wrapper:nth-child(1) {
+  flex: 2;
+  flex-basis: 300px;
+}
+
+.footer-wrapper:nth-child(1) p {
+  max-width: 350px;
+}
+
+.footer-wrapper h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: start;
+  color: var(--text-primary-clr);
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.footer-input {
+  height: 7vh;
+}
+
+.email-field {
+  color: var(--text-primary-clr);
+  flex: 1;
+  border-radius: .5rem 0 0 ,5rem;
+  background: var(--surface-clr);
+  border: 0.1rem solid rgba(123, 123, 123, 0.2);
+  padding: 0.1rem .1rem 0.1rem 1rem;
+}
+
+.email-field:focus{
+    outline: .09rem solid var(--text-primary-clr);
+}
+
+.input-btn {
+  width: 3rem;
+  background: var(--text-primary-clr);
+  font-size: 1.2rem;
+  color: var(--fix-clr);
+  border: none;
+  border-radius: 0 .5rem .5rem 0;
+}
+
+

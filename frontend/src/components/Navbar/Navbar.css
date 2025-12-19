@@ -1,0 +1,257 @@
+header {
+   position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 199;
+    background: var(--background-clr);
+}
+
+
+nav {
+  box-shadow: 0 0 2px 0 var(--text-primary-clr);
+  transition:all;
+  transition-duration: 300;
+
+}
+
+.navbar {
+  min-height: 14vh;
+  
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--primary-blue-clr);
+  font-weight: bold;
+  align-items: center;
+ 
+
+}
+
+.logo span {
+  background: var(--top-clr);
+  color: var(--primary-clr);
+  width: 2.8rem;
+  aspect-ratio: 1;
+  border-radius: 100vw;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.link a {
+  font-size: 0.95rem;
+  color: var(--text-secondary-clr);
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+ 
+}
+
+.link a:hover {
+  color: var(--text-primary-clr);
+  font-size: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: var(--top-clr);
+  color: var(--primary-clr);
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 0.1rem solid var(--top-clr);
+  transition: 0.3s ease-in-out;
+  border-radius: 100vw;
+}
+
+.btn:hover {
+  background: var(--primary-clr);
+  color: var(--top-clr);
+  border: 0.1rem solid var(--top-clr);
+  
+}
+.icon-container {
+  width: 2.7rem;
+  aspect-ratio: 1;
+  border-radius: 100vw;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  transition: .5s ease-in-out;
+  align-items: center;
+}
+
+.icon-container:hover.green-inverse{
+
+  background: transparent;
+  color: var(--accent-clr);
+}
+
+.border-inverse {
+  color: var(--secondary-clr);
+  border: 0.1rem solid rgba(123, 123, 123, 0.3);
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  color: var(--text-primary-clr);
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+ 
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+ 
+  padding: 0.7rem 1.5rem;
+  text-transform: capitalize;
+  background: var(--fix-clr);
+  color: var(--primary-blue-clr);
+  border: 0.07rem solid var(--top-clr);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--top-clr);
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+ .dropdown-content a:last-child{
+  border-bottom: none;
+ }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.profile-photo-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .desktop-menu,
+  .nav-action .btn {
+    display: none;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+  .logo span {
+    width: 2.5rem;
+    margin-right: 0.2rem;
+  }
+
+  .hamburger {
+    display: block;
+    
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    transform: translateX(-50%);
+ background: var(--surface-clr);
+    backdrop-filter:blur(20px) ;
+    border: 0.1rem solid rgba(123, 123, 123, 0.2);
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    z-index: 99;
+    transition: .5s ease-in-out;
+  }
+  .mobile-menu-active{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+    .navbar {
+  min-height: 11vh;
+  
+}
+
+.icon-container{
+  font-size: 2rem;
+}
+
+.hamburger{
+  font-size: 2rem;
+}
+}
+
+/*     media queries   */
+@media screen and (max-width: 768px) {
+  .navbar {
+  min-height: 11vh;
+  
+}
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+  min-height: 11vh;
+  
+}
+ .logo {
+    font-size: 1.6rem;
+  }
+
+  .hamburger{
+    font-size: 1.5rem;
+  }
+
+  .icon-container {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,126 @@
+.hero-section {
+  min-height: calc(100vh -14vh);
+  margin-top: 50px;
+}
+
+.hero-image,
+.hero-content {
+  flex: 1;
+  flex-basis: 300px;
+}
+
+.hero-image {
+  height: calc(100vh -14vh);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sub-text {
+  color: var(--text-primary-clr);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  color: var(--text-primary-clr);
+  margin-block: 0.5rem;
+}
+
+h2 {
+  font-size: 3.5rem !important;
+  line-height: 3rem;
+  color: var(--vav-border-clr);
+  margin-block: 0.5rem;
+  margin-top: 1rem !important;
+}
+.purple-text {
+  color: var(--primary-blue-clr);
+}
+
+.btn-inverse {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: 0.3s ease-in-out;
+  background: var(--fix-clr);
+  color: var(--primary-blue-clr);
+  border: 0.07rem solid var(--top-clr);
+  cursor: pointer;
+}
+
+.btn-inverse:hover {
+  background: var(--primary-blue-clr);
+  color: var(--fix-clr);
+}
+
+p {
+  font-size: 0.95rem;
+  color: var(--text-secondary-clr);
+  max-width: 550px;
+}
+
+.para {
+  margin-block: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    margin-top: 30px;
+  }
+
+  .hero-image {
+    height: 100%;
+  }
+  .gap-4 {
+    gap: 4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .hero-content {
+    margin-top: 3rem;
+  }
+
+  .sub-text {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.5rem;
+}
+}
+
+/*     media queries   */
+@media screen and (max-width: 600px) {
+  .hero-section {
+  margin-top: 10px;
+}
+
+  .sub-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+}
+
+@media screen and (max-width: 360px) {
+    .hero {
+        margin-top: 10px;
+    }
+}

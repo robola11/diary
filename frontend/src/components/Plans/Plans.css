@@ -1,0 +1,60 @@
+.bg-header {
+    padding: 1.5rem;
+    background-image: url("../../assets/header-bg.jfif");
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: .5rem;
+}
+
+strong {
+    font-size: 1.2rem;
+    color: var(--primary-clr);
+}
+
+h5 {
+    font-size: 2.2rem;
+    color: var(--primary-blk-clr);
+}
+
+h5 small {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.black-inverse {
+    background: var(--primary-blk-clr);
+    border: .1rem solid var(--primary-clr);
+    color: var(--primary-clr);
+}
+
+.icon-container:hover.black-inverse {
+
+  background: transparent;
+  color: var(--primary-clr);
+}
+
+.self-start {
+    align-self: flex-start;
+}
+
+.mt-1 {
+    margin-top: 1rem ;
+}
+
+.feature {
+    color: var(--text-primary-clr);
+}
+
+.check{
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: .9rem;
+    background: var(--top-clr);
+    color: var(--primary-clr);
+    border-radius: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
